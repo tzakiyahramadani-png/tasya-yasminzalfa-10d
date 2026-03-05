@@ -27,49 +27,102 @@
 
 <main class="artikel">
 
-    <h2>Bedah Buku: Negeri 5 Menara</h2>
-    <p class="penulis">Ditulis oleh: Ahmad Fuadi</p>
+    
+        
+        
+        <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Toko Buku Tasya-Zalfa</title>
 
-    <img src="gambar/menara.jpg" alt="sampul Negeri 5 Menara" class="sampul">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-    <p>
-        Buku ini menceritakan perjalanan hidup Alif,
-        seorang anak Minang yang menempuh pendidikan di Pondok
-        Pesantren Madani.
-    </p>
+header {
+    background-color: #8e44ad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-    <p>
-        Awalnya penuh keraguan, namun perlahan Alif menemukan
-        makna perjuangan, persahabatan, dan kekuatan mimpi.
-    </p>
+.event-container {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-    <blockquote>
-        "Man Jadda Wajada - Siapa yang bersungguh-sungguh,
-        dia akan berhasil."
-    </blockquote>
+button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    <p>
-        Kalimat itu menjadi semangat utama dalam buku ini.
-        Kisah yang ditulis berdasarkan pengalaman nyata,
-        sangat menginspirasi.
-    </p>
+button:hover {
+    background-color: #732d91;
+}
 
-    <p>
-        Buku ini cocok dibaca oleh remaja dan orang dewasa
-        yang sedang mencari motivasi hidup. Cerita persahabatan,
-        perjuangan, dan cinta belajar membuatnya menyentuh
-        dan relevan bagi pembaca di berbagai usia.
-    </p>
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+</style>
+</head>
 
-    <a href="produk.html" class="btn-kembali">Kembali ke Katalog</a>
+<body>
 
-</main>
+<header>
+    <h1>Event Spesial Toko Buku Tasya-Zalfa</h1>
+</header>
 
+<div class="event-container">
+    <h2>📚 Bedah Buku & Diskon 30%</h2>
+    <p><b>Tanggal:</b> 20 Maret 2026</p>
+    <p><b>Tempat:</b> Toko Buku Tasya-Zalfa</p>
+    <p>Dapatkan diskon spesial dan ikut sesi bedah buku bersama komunitas!</p>
+
+    <h3>Form Pendaftaran</h3>
+    <input type="text" id="nama" placeholder="Masukkan Nama">
+    <input type="email" id="email" placeholder="Masukkan Email">
+    <button onclick="daftarEvent()">Daftar Sekarang</button>
+</div>
+
+<script>
+function daftarEvent() {
+    let nama = document.getElementById("nama").value;
+    let email = document.getElementById("email").value;
+
+    if(nama === "" || email === "") {
+        alert("Harap isi semua data terlebih dahulu!");
+    } else {
+        alert("Terima kasih " + nama + "! Kamu berhasil daftar event 🎉");
+    }
+}
+</script>
+
+</body>
+</html>
+        
 <footer>
     <p>&copy; 2026 Toko Buku Tasya-Zalfa</p>
 </footer>
 
 </body>
 </html>
+
 
 
