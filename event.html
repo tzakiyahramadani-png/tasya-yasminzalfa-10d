@@ -26,11 +26,96 @@
 </header>
 
 <main class="artikel">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Toko Buku Tasya-Zalfa</title>
 
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8e44ad;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.event-container {
+    background: white;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #732d91;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Event Spesial Toko Buku Tasya-Zalfa</h1>
+</header>
+
+<div class="event-container">
+    <h2>📚 Bedah Buku & Diskon 30%</h2>
+    <p><b>Tanggal:</b> 20 Maret 2026</p>
+    <p><b>Tempat:</b> Toko Buku Tasya-Zalfa</p>
+    <p>Dapatkan diskon spesial dan ikut sesi bedah buku bersama komunitas!</p>
+
+    <h3>Form Pendaftaran</h3>
+    <input type="text" id="nama" placeholder="Masukkan Nama">
+    <input type="email" id="email" placeholder="Masukkan Email">
+    <button onclick="daftarEvent()">Daftar Sekarang</button>
+</div>
+
+<script>
+function daftarEvent() {
+    let nama = document.getElementById("nama").value;
+    let email = document.getElementById("email").value;
+
+    if(nama === "" || email === "") {
+        alert("Harap isi semua data terlebih dahulu!");
+    } else {
+        alert("Terima kasih " + nama + "! Kamu berhasil daftar event 🎉");
+    }
+}
+</script>
+
+</body>
+</html>
     
         
         
-        <!DOCTYPE html>
+       
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -123,6 +208,7 @@ function daftarEvent() {
 
 </body>
 </html>
+
 
 
 
